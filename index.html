@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071713">
+<title>فرماندار | همراهی در مسیر توافق</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#071713;
+  --surface:#102720;
+  --surface-2:#17382f;
+  --gold:#d9ad72;
+  --gold-soft:#f3dfb9;
+  --cyan:#75c7a7;
+  --violet:#b98259;
+  --text:#f4f0e6;
+  --muted:#c0cfc5;
+  --line:rgba(184,211,194,.18);
+  --body-font:'Vazirmatn',Tahoma,sans-serif;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--text);font-family:var(--body-font);font-size:17px;line-height:1.9;background:radial-gradient(ellipse at 83% 0%,rgba(44,127,93,.22),transparent 34%),radial-gradient(ellipse at 0% 65%,rgba(197,139,84,.10),transparent 30%),var(--bg)}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+.topline{height:3px;background:linear-gradient(90deg,var(--cyan),var(--violet),var(--gold))}
+header{position:sticky;top:0;z-index:10;background:rgba(8,13,29,.91);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:13px;font-weight:900;font-size:23px;white-space:nowrap}
+.brand-mark{width:auto;min-width:46px;height:46px;padding:0 12px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(145deg,#f3dfb9,#d6a84f);color:#14251f;font-size:14px;font-weight:900;box-shadow:0 8px 28px #d9ad7235}
+.navlinks{display:flex;align-items:center;gap:7px;padding:6px;border:1px solid var(--line);border-radius:16px;background:#ffffff07}
+.navlinks button{border:0;background:transparent;color:#c8d8ce;padding:9px 16px;border-radius:11px;cursor:pointer;font-size:15px;font-weight:600;transition:.2s}
+.navlinks button:hover{color:var(--gold-soft);background:#ffffff08}
+.navlinks button.active{color:#14251f;background:linear-gradient(110deg,var(--gold),#f3dfb9);box-shadow:0 5px 18px #d9ad722b}
+.top-cta{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-size:14px;font-weight:700;white-space:nowrap}
+main{min-height:calc(100vh - 160px)}
+.page{display:none;animation:appear .28s ease both}
+.page.active{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.hero{padding:76px 0 58px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:55px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--cyan);font-size:14px;font-weight:700;border:1px solid #75c7a744;background:#75c7a70d;padding:7px 15px;border-radius:30px}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px #75c7a71a}
+h1{font-size:clamp(56px,8vw,88px);line-height:1.25;letter-spacing:0;margin:19px 0 12px;font-weight:900;background:linear-gradient(110deg,#fffaf0 12%,var(--gold-soft) 58%,#9bd9b9 100%);background-clip:text;color:transparent}
+.hero-copy{font-size:18px;line-height:2.05;color:var(--muted);max-width:590px;margin:0 0 27px}
+.actions{display:flex;flex-wrap:wrap;gap:13px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:51px;padding:11px 23px;border-radius:13px;background:linear-gradient(110deg,var(--gold),#ffe8b2);color:#14251f;font-weight:800;font-size:15px;border:1px solid #f3dfb9;box-shadow:0 9px 28px #d9ad7224;transition:.2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 13px 34px #d9ad7240}
+.btn.secondary{background:#ffffff08;border:1px solid var(--line);color:var(--text);box-shadow:none}
+.btn.secondary:hover{border-color:var(--cyan);color:var(--cyan)}
+.hero-visual{min-height:360px;display:grid;place-items:center;position:relative}
+.seal{width:300px;height:300px;border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 50% 40%,#24483b 0%,#17362d 52%,#091d17 72%);border:1px solid #75c7a755;box-shadow:0 0 0 16px #b9825909,0 0 0 34px #b9825906,0 0 75px #716be02c,inset 0 0 45px #a69bff15}
+.seal:before,.seal:after{content:"";position:absolute;inset:18px;border:1px dashed #75c7a778;border-radius:50%;transform:rotate(24deg)}
+.seal:after{inset:-14px;border-style:solid;border-color:#d9ad7265;transform:rotate(-18deg)}
+.seal-core{width:146px;height:166px;display:grid;place-items:center;clip-path:polygon(50% 0,91% 17%,84% 73%,50% 100%,16% 73%,9% 17%);background:linear-gradient(145deg,#f3dfb9,#c99355 52%,#80532f);color:#14251f;font-size:75px;font-weight:900;filter:drop-shadow(0 10px 25px #d9ad7245)}
+.float-label{position:absolute;padding:8px 14px;border-radius:30px;background:#19362d;border:1px solid var(--line);font-size:13px;color:#e5eee6;box-shadow:0 8px 24px #0003}
+.float-one{top:38px;right:-2px}.float-two{bottom:35px;left:-6px;color:var(--gold-soft)}
+.metrics{border-block:1px solid var(--line);background:linear-gradient(90deg,transparent,#17382fa8,transparent)}
+.metrics-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:22px 0}
+.metric{display:flex;align-items:center;justify-content:center;gap:12px;color:#e1e9df;font-size:15px}
+.metric-num{width:37px;height:37px;display:grid;place-items:center;border-radius:12px;color:var(--gold);background:#d9ad7213;border:1px solid #d9ad7235;font-weight:800;font-size:14px;direction:ltr}
+.page-head{text-align:center;padding:60px 0 34px}
+.kicker{color:var(--cyan);font-size:13px;font-weight:800;letter-spacing:.3px}
+.page-title{font-size:clamp(30px,4.4vw,42px);line-height:1.35;margin:8px 0 9px;font-weight:900;color:#f3dfb9}
+.page-sub{max-width:680px;margin:0 auto;color:var(--muted);font-size:17px;line-height:2}
+.section{padding:22px 0 66px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+.card{position:relative;overflow:hidden;padding:28px 25px 27px;border-radius:21px;border:1px solid var(--line);background:linear-gradient(145deg,#192644,#10182e);box-shadow:0 15px 38px #0002;transition:.23s}
+.card:hover{transform:translateY(-5px);border-color:#75c7a766}
+.card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.card-icon{width:54px;height:54px;border-radius:17px;display:grid;place-items:center;color:var(--cyan);background:#75c7a718;border:1px solid #75c7a745;font-size:26px}
+.card:nth-child(2) .card-icon{color:var(--gold);background:#d9ad7213;border-color:#d9ad723b}
+.card:nth-child(3) .card-icon{color:#e0b58c;background:#b9825918;border-color:#b9825940}
+.card-index{font-size:13px;color:#9db5a8;direction:ltr}
+.card h3{font-size:20px;margin:0 0 9px;color:#fff;font-weight:800}
+.card p{font-size:16px;line-height:2.05;color:var(--muted);margin:0}
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+.principle{padding:21px 15px;border:1px solid var(--line);border-radius:17px;background:#131e37;text-align:center}
+.principle strong{display:block;color:var(--gold-soft);font-size:17px;margin-bottom:5px}
+.principle span{font-size:14px;color:var(--muted);line-height:1.9}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}
+.step{padding:24px;border-radius:19px;border:1px solid var(--line);background:linear-gradient(150deg,#182541,#10182e)}
+.step-no{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:#d9ad7216;border:1px solid #d9ad7245;color:var(--gold);font-weight:800;margin-bottom:16px}
+.step h3{font-size:19px;margin:0 0 7px}.step p{font-size:16px;color:var(--muted);margin:0;line-height:2}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+.faq article{padding:21px 22px;border:1px solid var(--line);border-radius:17px;background:#121d35}
+.faq h3{font-size:17px;color:var(--gold-soft);margin:0 0 7px}.faq p{font-size:15px;line-height:2;color:var(--muted);margin:0}
+.check-panel{margin:35px auto 0;max-width:850px;padding:25px 28px;border:1px solid #d9ad723d;border-radius:20px;background:linear-gradient(120deg,#1a2745,#102720)}
+.check-panel h3{font-size:19px;color:var(--gold-soft);margin:0 0 9px}
+.check-panel ul{padding-right:22px;margin:0;color:var(--muted);font-size:15px;line-height:2.1}
+.contact-wrap{padding:62px 0 75px}
+.contact-card{max-width:800px;margin:auto;text-align:center;padding:43px 28px;border-radius:25px;border:1px solid #b9825955;background:radial-gradient(ellipse at 50% 0%,#31534450,transparent 58%),linear-gradient(145deg,#182541,#0f172c);box-shadow:0 22px 65px #0003}
+.contact-card .page-sub{margin-bottom:20px}
+.handle{display:inline-block;direction:ltr;color:var(--cyan);font-size:clamp(19px,4vw,25px);font-weight:800;margin:9px 0 21px}
+.small-note{max-width:650px;margin:26px auto 0;color:#9eb4a7;font-size:13px;line-height:2}
+.footer{border-top:1px solid var(--line);padding:21px 0;text-align:center;color:#8fa79a;font-size:13px}
+.footer strong{color:var(--gold)}
+@media(max-width:850px){.nav{gap:12px}.top-cta{display:none}.hero-grid{gap:20px}.cards{grid-template-columns:1fr 1fr}.principles{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){body{font-size:16px}.nav{min-height:76px;flex-wrap:wrap;padding:11px 0}.brand{font-size:20px}.brand-mark{width:auto;min-width:41px;height:41px}.navlinks{order:2;width:100%;justify-content:space-between;gap:2px}.navlinks button{padding:9px 11px;font-size:14px;flex:1}.hero{padding:47px 0 38px}.hero-grid{grid-template-columns:1fr;text-align:center;gap:12px}.hero-copy{font-size:17px;margin-inline:auto}.actions{justify-content:center}.hero-visual{min-height:265px}.seal{width:220px;height:220px}.seal-core{width:110px;height:127px;font-size:57px}.float-one{right:0;top:24px}.float-two{left:0;bottom:22px}.metrics-row{gap:4px;padding:16px 0}.metric{font-size:12px;gap:7px;flex-direction:column;text-align:center}.metric-num{width:32px;height:32px}.page-head{padding:43px 0 25px}.page-sub{font-size:16px}.section{padding:12px 0 46px}.cards,.steps,.faq{grid-template-columns:1fr}.card{padding:23px}.card p,.step p{font-size:16px}.principle{padding:17px 10px}.principle span{font-size:13px}.check-panel{padding:21px 19px}.contact-wrap{padding:42px 0 52px}.contact-card{padding:33px 19px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" data-page="home"><span class="brand-mark">اطلاعات</span><span>فرماندار</span></a>
+    <nav class="navlinks" aria-label="منوی اصلی">
+      <button class="active" type="button" data-page="home">خانه</button>
+      <button type="button" data-page="services">خدمات</button>
+      <button type="button" data-page="process">مراحل همکاری</button>
+      <button type="button" data-page="contact">ارتباط</button>
+    </nav>
+    <a class="top-cta" href="https://rubika.ir/VaSeTeH_GoVerNor" target="_blank" rel="noopener">صفحه روبیکا <span>↗</span></a>
+  </div>
+</header>
+<main>
+  <section class="page active" data-panel="home" id="home">
+    <div class="hero"><div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span> همراهی در مسیر توافق</div>
+        <h1>فرماندار</h1>
+        <p class="hero-copy">برای ارتباطی روشن‌تر و هماهنگی منظم‌تر؛ از شروع گفت‌وگو تا مشخص شدن جزئیات توافق، همراه شما در مسیر تعامل و واسطه‌گری.</p>
+        <div class="actions">
+          <a class="btn" href="https://rubika.ir/VaSeTeH_GoVerNor" target="_blank" rel="noopener">ارتباط در روبیکا <span>↗</span></a>
+          <button class="btn secondary" type="button" data-page="services">آشنایی با خدمات</button>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="نشان فرماندار"><div class="seal"><div class="seal-core">ف</div><span class="float-label float-one">شفافیت در ارتباط</span><span class="float-label float-two">GO VERNOR</span></div></div>
+    </div></div>
+    <div class="metrics"><div class="wrap metrics-row">
+      <div class="metric"><span class="metric-num">01</span><span>گفت‌وگوی شفاف</span></div>
+      <div class="metric"><span class="metric-num">02</span><span>جزئیات روشن</span></div>
+      <div class="metric"><span class="metric-num">03</span><span>پیگیری منظم</span></div>
+    </div></div>
+  </section>
+
+  <section class="page" data-panel="services" id="services">
+    <div class="wrap">
+      <div class="page-head"><div class="kicker">خدمات و اصول</div><h2 class="page-title">خدمات فرماندار</h2><p class="page-sub">هدف، ساده‌تر کردن ارتباط و روشن نگه داشتن مسیر توافق است؛ با توضیحات دقیق و هماهنگی مرحله‌به‌مرحله.</p></div>
+      <div class="section">
+        <div class="cards">
+          <article class="card"><div class="card-top"><span class="card-icon">⇄</span><span class="card-index">01 / CONNECT</span></div><h3>ارتباط میان طرفین</h3><p>ایجاد مسیر گفت‌وگو میان افراد و انتقال منظم اطلاعات و شرایطی که هر طرف اعلام می‌کند.</p></article>
+          <article class="card"><div class="card-top"><span class="card-icon">◇</span><span class="card-index">02 / CLARITY</span></div><h3>شفاف‌سازی توافق</h3><p>کمک به مشخص شدن موضوع، مبلغ، زمان‌بندی و تعهدات تا نکته مبهمی باقی نماند.</p></article>
+          <article class="card"><div class="card-top"><span class="card-icon">✓</span><span class="card-index">03 / FOLLOW-UP</span></div><h3>هماهنگی و پیگیری</h3><p>پیگیری روند ارتباط و هماهنگی گام‌های بعدی بر اساس شرایطی که طرفین پذیرفته‌اند.</p></article>
+        </div>
+        <div class="page-head" style="padding:55px 0 18px"><div class="kicker">THE PRINCIPLES</div><h2 class="page-title" style="font-size:30px">اصول همکاری</h2><p class="page-sub">چهار اصل برای تجربه‌ای منظم‌تر و محترمانه‌تر</p></div>
+        <div class="principles">
+          <div class="principle"><strong>شفافیت</strong><span>شرایط و جزئیات روشن و قابل بررسی بیان شوند.</span></div>
+          <div class="principle"><strong>احترام</strong><span>گفت‌وگو با رعایت احترام متقابل پیش برود.</span></div>
+          <div class="principle"><strong>هماهنگی</strong><span>اطلاعات و زمان‌بندی‌ها منظم منتقل شوند.</span></div>
+          <div class="principle"><strong>مسئولیت‌پذیری</strong><span>پیگیری‌ها در چارچوب توافق انجام شوند.</span></div>
+        </div>
+        <div class="check-panel"><h3>پیش از نهایی کردن هر توافق</h3><ul>
+          <li>هویت و راه ارتباطی طرف مقابل را مستقلاً بررسی کنید.</li>
+          <li>موضوع معامله، مبلغ و شرایط پرداخت را دقیق و مکتوب مشخص کنید.</li>
+          <li>زمان‌بندی و مسئولیت هر طرف را روشن نگه دارید.</li>
+          <li>مدارک و پیام‌های مربوط به توافق را نزد خود نگه دارید.</li>
+          <li>تا پیش از اطمینان از جزئیات، اطلاعات حساس را ارسال نکنید.</li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" data-panel="process" id="process">
+    <div class="wrap">
+      <div class="page-head"><div class="kicker">A CLEAR PROCESS</div><h2 class="page-title">مراحل همکاری</h2><p class="page-sub">روند ارتباط در سه گام ساده پیش می‌رود تا هر مرحله برای طرفین روشن باشد.</p></div>
+      <div class="section">
+        <div class="steps">
+          <article class="step"><div class="step-no">۱</div><h3>ثبت درخواست</h3><p>موضوع موردنظر و شرایط اولیه را از طریق صفحه روبیکا مطرح کنید تا درخواست شما مشخص باشد.</p></article>
+          <article class="step"><div class="step-no">۲</div><h3>بررسی جزئیات</h3><p>نیازها، اطلاعات و انتظارات طرفین بررسی می‌شود و موارد مهم برای ادامه گفت‌وگو روشن می‌گردد.</p></article>
+          <article class="step"><div class="step-no">۳</div><h3>هماهنگی نهایی</h3><p>پس از روشن شدن شرایط و پذیرش آن‌ها از سوی طرفین، درباره گام‌های بعدی هماهنگی انجام می‌شود.</p></article>
+        </div>
+        <div class="page-head" style="padding:58px 0 14px"><div class="kicker">HELP CENTER</div><h2 class="page-title" style="font-size:30px">پرسش‌های متداول</h2></div>
+        <div class="faq">
+          <article><h3>چطور همکاری را شروع کنم؟</h3><p>از طریق دکمه روبیکا وارد صفحه شوید و موضوع درخواست و شرایط اولیه را در پیام خود توضیح دهید.</p></article>
+          <article><h3>در پیام اول چه بنویسم؟</h3><p>موضوع معامله، توضیح کوتاه درباره نیازتان و راه ارتباطی مناسب کافی است. اطلاعات حساس را عمومی ارسال نکنید.</p></article>
+          <article><h3>آیا توافق به‌جای طرفین انجام می‌شود؟</h3><p>تصمیم‌گیری و پذیرش شرایط بر عهده خود طرفین است؛ این صفحه برای معرفی مسیر ارتباط و هماهنگی است.</p></article>
+          <article><h3>آیا نتیجه معامله تضمین می‌شود؟</h3><p>خیر. هیچ صفحه‌ای به‌تنهایی اعتبار افراد یا نتیجه معامله را تضمین نمی‌کند. بررسی مستقل ضروری است.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" data-panel="contact" id="contact">
+    <div class="wrap contact-wrap"><div class="contact-card">
+      <div class="kicker">GET IN TOUCH</div><h2 class="page-title">با فرماندار در ارتباط باشید</h2>
+      <p class="page-sub">برای طرح درخواست یا دریافت توضیحات بیشتر، از طریق صفحه روبیکا پیام بفرستید.</p>
+      <div class="handle">@VaSeTeH_GoVerNor</div>
+      <div><a class="btn" href="https://rubika.ir/VaSeTeH_GoVerNor" target="_blank" rel="noopener">ورود به صفحه روبیکا <span>↗</span></a></div>
+      <p class="small-note">پیش از هر پرداخت یا توافق، هویت افراد و جزئیات معامله را مستقلاً بررسی کنید. اطلاعات محرمانه و کدهای ورود خود را در اختیار دیگران قرار ندهید. این صفحه به‌تنهایی تضمین‌کننده معامله نیست.</p>
+    </div></div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap">© <strong>فرماندار</strong> — تمامی حقوق محفوظ است</div></footer>
+<script>
+(() => {
+  const pages = [...document.querySelectorAll('[data-panel]')];
+  const controls = [...document.querySelectorAll('[data-page]')];
+  function openPage(name) {
+    if (!pages.some(page => page.dataset.panel === name)) name = 'home';
+    pages.forEach(page => page.classList.toggle('active', page.dataset.panel === name));
+    controls.forEach(control => control.classList.toggle('active', control.dataset.page === name));
+    const labels = {home:'خانه', services:'خدمات', process:'مراحل همکاری', contact:'ارتباط'};
+    document.title = `فرماندار | ${labels[name]}`;
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+  controls.forEach(control => control.addEventListener('click', event => {
+    event.preventDefault();
+    openPage(control.dataset.page);
+  }));
+})();
+</script>
+</body>
+</html>
